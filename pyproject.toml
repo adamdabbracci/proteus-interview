@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "projectflow"
+version = "0.1.0"
+description = "A lightweight project management REST API"
+authors = ["Engineering Team"]
+readme = "README.md"
+packages = [{include = "projectflow"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
